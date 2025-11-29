@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Generate placeholder text using the philosophical vocabulary of Friedrich Nietzsche. Perfect for designers and developers who need existential lorem ipsum."
+        />
+        <meta name="author" content="Elvis Nuno" />
+
+        <!-- Open Graph / Social Media -->
+        <meta
+            property="og:title"
+            content="Nietzsche Ipsum - Philosophical Placeholder Text"
+        />
+        <meta
+            property="og:description"
+            content="Generate lorem ipsum text using Friedrich Nietzsche's philosophical vocabulary"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ipsum.hashgrid.net" />
+        <meta
+            property="og:image"
+            content="https://ipsum.hashgrid.net/nietzsche.jpg"
+        />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Nietzsche Ipsum" />
+        <meta
+            name="twitter:description"
+            content="Philosophical placeholder text generator"
+        />
+
+        <title>Nietzsche Ipsum - Philosophical Lorem Ipsum Generator</title>
+
+        <link href="style.css" rel="stylesheet" />
+
+        <!-- jQuery from CDN (smaller, better cached) -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script src="ipsum.js" defer></script>
+    </head>
+    <body>
+        <div class="container" role="main">
+            <header>
+                <img
+                    src="nietzsche.jpg"
+                    alt="Portrait of Friedrich Nietzsche"
+                    width="200"
+                    height="200"
+                />
+                <h1>Nietzsche Ipsum</h1>
+
+                <form id="ipsum-form" onsubmit="return false;">
+                    <p>
+                        <label for="num">I desire </label>
+                        <input
+                            type="number"
+                            id="num"
+                            name="wordCount"
+                            value="150"
+                            min="50"
+                            max="10000"
+                            step="50"
+                            aria-label="Number of words"
+                            required
+                        />
+                        <span> words of truth</span>
+                    </p>
+                    <p>
+                        <button
+                            id="generate"
+                            type="submit"
+                            aria-label="Generate Nietzsche Ipsum text"
+                        >
+                            Ecce Ipsum
+                        </button>
+                    </p>
+                </form>
+            </header>
+
+            <div
+                class="social-share"
+                role="complementary"
+                aria-label="Share on social media"
+            >
+                <a
+                    href="https://twitter.com/intent/tweet?text=Check%20out%20Nietzsche%20Ipsum%20-%20Philosophical%20Lorem%20Ipsum%20Generator&url=https://ipsum.hashgrid.net&via=NunoElvis"
+                    class="twitter-share-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Share on Twitter"
+                    >Tweet</a
+                >
+            </div>
+
+            <div
+                class="ipsum-container"
+                role="region"
+                aria-live="polite"
+                aria-label="Generated text"
+            ></div>
+
+            <footer class="footer">
+                <a
+                    href="https://github.com/enuno"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit Elvis Nuno's GitHub profile"
+                >
+                    Made with &hearts; by <span class="ga">@enuno</span>
+                </a>
+            </footer>
+        </div>
+
+        <!-- Analytics (if needed) -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script> -->
+    </body>
+</html>
